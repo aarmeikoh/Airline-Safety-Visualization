@@ -1,0 +1,2187 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.21.1217.2252                               -->
+<workbook original-version='18.1' source-build='2021.4.2 (20214.21.1217.2252)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.RelationshipCalculations.true...RelationshipCalculations />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Accidents and fatalities per year' inline='true' name='federated.1mrgop811p6tqn1au5el40xv97si' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Accidents and fatalities per year' name='google-sheets.08pbo3818n9b0s193brd80lqnj42'>
+            <connection class='google-sheets' cleaning='yes' compat='no' dataRefreshTime='' filename='Accidents and fatalities per year' googleSheetId='1SDp7p1y6m7N5xD5_fpOkYOrJvd68V7iy6etXy2cetb8' interpretationMode='9' mimeType='application/vnd.google-apps.spreadsheet' server='' server-oauth='' username='aarmeikoh@gmail.com' validate='no' />
+          </named-connection>
+          <named-connection caption='Airplane_Crashes_and_Fatalities_Since_1908' name='textscan.1taneb016tmodu1c58l4u1kh2stx'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='C:\Users\chana\OneDrive\Desktop\640\Project\hhaveliw-airplane-crashes-1908-2009\hhaveliw-airplane-crashes-1908-2009\Airplane_Crashes_and_Fatalities_Since_1908.csv' dataRefreshTime='' directory='C:/Users/chana/OneDrive/Desktop/640/Project/hhaveliw-airplane-crashes-1908-2009/hhaveliw-airplane-crashes-1908-2009' filename='C:/Users/chana/AppData/Local/Temp/TableauTemp/0w41lw60ls8pzn1fohrys0cgl3ic/Airplane_Crashes_and_Fatalities_Since_1908.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='fars_df' name='textscan.1gfwmvl0k2v5pe16p2d911jrk786'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/chana/OneDrive/Desktop/640/Project/fars_df.csv' dataRefreshTime='' directory='C:/Users/chana/OneDrive/Desktop/640/Project' filename='C:/Users/chana/AppData/Local/Temp/TableauTemp/03y2a6j1nk41fc14163k50z10c0j/fars_df.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='Traffic_and_Operations _1929-Present_Full_Data_data' name='textscan.16gqqxf06fnufy13hm3ws003bgau'>
+            <connection class='textscan' directory='C:/Users/chana/OneDrive/Desktop/640/Project' filename='Traffic_and_Operations _1929-Present_Full_Data_data.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='Financial_Results _1947-Present_Full_Data_data' name='textscan.1d7qmxx06hhx0m1gn2nlo1vhgbjo'>
+            <connection class='textscan' directory='C:/Users/chana/OneDrive/Desktop/640/Project' filename='Financial_Results _1947-Present_Full_Data_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='google-sheets.08pbo3818n9b0s193brd80lqnj42' name='Accidents and fatalities per ye' table='[&apos;Accidents and fatalities per ye$&apos;]' type='table'>
+          <columns gridOrigin='A1:W79:no:A1:W79:2' lost='0' outcome='1' processed='1272'>
+            <column datatype='integer' date-parse-format='yyyy' name='Accidents  (excl. suicide, sabotage, hijackings etc.) Year' ordinal='0' />
+            <column datatype='integer' name='Accidents  (excl. suicide, sabotage, hijackings etc.) Accidents' ordinal='1' />
+            <column datatype='real' name='Accidents  (excl. suicide, sabotage, hijackings etc.) Fatalities' ordinal='2' />
+            <column datatype='real' name='F4' ordinal='3' />
+            <column datatype='integer' name='Accidents  (incl. suicide, sabotage, hijackings etc.) Accidents' ordinal='4' />
+            <column datatype='integer' name='Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities' ordinal='5' />
+            <column datatype='real' name='F7' ordinal='6' />
+            <column datatype='integer' name='Accidents with passenger flights  (incl. suicide, sabotage, hijackings etc.) Accidents' ordinal='7' />
+            <column datatype='integer' name='Accidents with passenger flights  (incl. suicide, sabotage, hijackings etc.) Fatalities' ordinal='8' />
+            <column datatype='real' name='F10' ordinal='9' />
+            <column datatype='integer' name='Accidents with passenger + cargo flights (incl. suicide, sabotage, hijackings etc.) Accidents' ordinal='10' />
+            <column datatype='integer' name='Accidents with passenger + cargo flights (incl. suicide, sabotage, hijackings etc.) Fatalities' ordinal='11' />
+            <column datatype='integer' name='F13' ordinal='12' />
+            <column datatype='real' name='F14' ordinal='13' />
+            <column datatype='integer' name='World air traffic (departures)' ordinal='14' />
+            <column datatype='real' name='1 accident  per x flights' ordinal='15' />
+            <column datatype='real' name='fatal accidents  per mln flights' ordinal='16' />
+            <column datatype='real' name='5-year  moving avg' ordinal='17' />
+            <column datatype='real' name='F19' ordinal='18' />
+            <column datatype='integer' name='F20' ordinal='19' />
+            <column datatype='integer' name='Corporate jets (civilian) Accidents' ordinal='20' />
+            <column datatype='integer' name='Corporate jets (civilian) Fatalities' ordinal='21' />
+            <column datatype='real' name='moving 5 year average # of accidents' ordinal='22' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.1taneb016tmodu1c58l4u1kh2stx' name='Airplane_Crashes_and_Fatalities_Since_1908.csv' table='[C:\Users\chana\OneDrive\Desktop\640\Project\hhaveliw-airplane-crashes-1908-2009\hhaveliw-airplane-crashes-1908-2009\Airplane_Crashes_and_Fatalities_Since_1908#csv]' type='table'>
+            <columns character-set='UTF-8' gridOrigin='A1:M5269:no:A1:M5269:1' header='yes' locale='en_US' separator=','>
+              <column datatype='date' name='Date' ordinal='0' />
+              <column datatype='datetime' name='Time' ordinal='1' />
+              <column datatype='string' name='Location' ordinal='2' />
+              <column datatype='string' name='Operator' ordinal='3' />
+              <column datatype='integer' name='Flight #' ordinal='4' />
+              <column datatype='string' name='Route' ordinal='5' />
+              <column datatype='string' name='Type' ordinal='6' />
+              <column datatype='string' name='Registration' ordinal='7' />
+              <column datatype='string' name='cn/In' ordinal='8' />
+              <column datatype='integer' name='Aboard' ordinal='9' />
+              <column datatype='integer' name='Fatalities' ordinal='10' />
+              <column datatype='integer' name='Ground' ordinal='11' />
+              <column datatype='string' name='Summary' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='google-sheets.08pbo3818n9b0s193brd80lqnj42' name='Accidents and fatalities per ye' table='[&apos;Accidents and fatalities per ye$&apos;]' type='table'>
+            <columns gridOrigin='A1:W79:no:A1:W79:2' lost='0' outcome='1' processed='1272'>
+              <column datatype='integer' date-parse-format='yyyy' name='Accidents  (excl. suicide, sabotage, hijackings etc.) Year' ordinal='0' />
+              <column datatype='integer' name='Accidents  (excl. suicide, sabotage, hijackings etc.) Accidents' ordinal='1' />
+              <column datatype='real' name='Accidents  (excl. suicide, sabotage, hijackings etc.) Fatalities' ordinal='2' />
+              <column datatype='real' name='F4' ordinal='3' />
+              <column datatype='integer' name='Accidents  (incl. suicide, sabotage, hijackings etc.) Accidents' ordinal='4' />
+              <column datatype='integer' name='Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities' ordinal='5' />
+              <column datatype='real' name='F7' ordinal='6' />
+              <column datatype='integer' name='Accidents with passenger flights  (incl. suicide, sabotage, hijackings etc.) Accidents' ordinal='7' />
+              <column datatype='integer' name='Accidents with passenger flights  (incl. suicide, sabotage, hijackings etc.) Fatalities' ordinal='8' />
+              <column datatype='real' name='F10' ordinal='9' />
+              <column datatype='integer' name='Accidents with passenger + cargo flights (incl. suicide, sabotage, hijackings etc.) Accidents' ordinal='10' />
+              <column datatype='integer' name='Accidents with passenger + cargo flights (incl. suicide, sabotage, hijackings etc.) Fatalities' ordinal='11' />
+              <column datatype='integer' name='F13' ordinal='12' />
+              <column datatype='real' name='F14' ordinal='13' />
+              <column datatype='integer' name='World air traffic (departures)' ordinal='14' />
+              <column datatype='real' name='1 accident  per x flights' ordinal='15' />
+              <column datatype='real' name='fatal accidents  per mln flights' ordinal='16' />
+              <column datatype='real' name='5-year  moving avg' ordinal='17' />
+              <column datatype='real' name='F19' ordinal='18' />
+              <column datatype='integer' name='F20' ordinal='19' />
+              <column datatype='integer' name='Corporate jets (civilian) Accidents' ordinal='20' />
+              <column datatype='integer' name='Corporate jets (civilian) Fatalities' ordinal='21' />
+              <column datatype='real' name='moving 5 year average # of accidents' ordinal='22' />
+            </columns>
+          </relation>
+          <relation connection='textscan.16gqqxf06fnufy13hm3ws003bgau' name='Traffic_and_Operations _1929-Present_Full_Data_data.csv' table='[Traffic_and_Operations _1929-Present_Full_Data_data#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='date' date-parse-format='yyyy' name='Year' ordinal='0' />
+              <column datatype='string' name='_Item Type' ordinal='1' />
+              <column datatype='string' name='_Path' ordinal='2' />
+              <column datatype='integer' name='Title' ordinal='3' />
+              <column datatype='real' name='Aircraft Deps (000)' ordinal='4' />
+              <column datatype='real' name='Aircraft KMs (mils)' ordinal='5' />
+              <column datatype='real' name='ASKs (mils)' ordinal='6' />
+              <column datatype='real' name='Cargo RTKs (mils)' ordinal='7' />
+              <column datatype='real' name='Freight RTKs (mils)' ordinal='8' />
+              <column datatype='real' name='Freight Tonnes (mils)' ordinal='9' />
+              <column datatype='real' name='Mail RTKs (mils)' ordinal='10' />
+              <column datatype='real' name='NetMargin' ordinal='11' />
+              <column datatype='integer' name='NetProfit (mils)' ordinal='12' />
+              <column datatype='integer' name='Number of Records' ordinal='13' />
+              <column datatype='integer' name='OpProfit (mils)' ordinal='14' />
+              <column datatype='integer' name='OpRevenues (mils)' ordinal='15' />
+              <column datatype='real' name='Pax (mils)' ordinal='16' />
+              <column datatype='real' name='PLF' ordinal='17' />
+              <column datatype='real' name='RPKs (mils)' ordinal='18' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1d7qmxx06hhx0m1gn2nlo1vhgbjo' name='Financial_Results _1947-Present_Full_Data_data.csv' table='[Financial_Results _1947-Present_Full_Data_data#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' date-parse-format='yyyy' name='Year' ordinal='0' />
+              <column datatype='string' name='_Item Type' ordinal='1' />
+              <column datatype='string' name='_Path' ordinal='2' />
+              <column datatype='integer' name='Title' ordinal='3' />
+              <column datatype='real' name='Aircraft Deps (000)' ordinal='4' />
+              <column datatype='real' name='Aircraft KMs (mils)' ordinal='5' />
+              <column datatype='real' name='ASKs (mils)' ordinal='6' />
+              <column datatype='real' name='Cargo RTKs (mils)' ordinal='7' />
+              <column datatype='real' name='Freight RTKs (mils)' ordinal='8' />
+              <column datatype='real' name='Freight Tonnes (mils)' ordinal='9' />
+              <column datatype='real' name='Mail RTKs (mils)' ordinal='10' />
+              <column datatype='real' name='NetMargin' ordinal='11' />
+              <column datatype='integer' name='NetProfit (mils)' ordinal='12' />
+              <column datatype='integer' name='Number of Records' ordinal='13' />
+              <column datatype='integer' name='OpProfit (mils)' ordinal='14' />
+              <column datatype='integer' name='OpRevenues (mils)' ordinal='15' />
+              <column datatype='real' name='Pax (mils)' ordinal='16' />
+              <column datatype='real' name='PLF' ordinal='17' />
+              <column datatype='real' name='RPKs (mils)' ordinal='18' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1gfwmvl0k2v5pe16p2d911jrk786' name='fars_df.csv' table='[fars_df#csv$]' type='table'>
+            <columns character-set='UTF-8' gridOrigin='A1:T27:no:A1:T27:1' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' date-parse-format='yyyy' name='F1' ordinal='0' />
+              <column datatype='integer' name='Fatal Crashes' ordinal='1' />
+              <column datatype='integer' name='Drivers' ordinal='2' />
+              <column datatype='integer' name='Passengers' ordinal='3' />
+              <column datatype='integer' name='Unknown' ordinal='4' />
+              <column datatype='integer' name='Sub Total1' ordinal='5' />
+              <column datatype='integer' name='Motorcyclists' ordinal='6' />
+              <column datatype='integer' name='Pedestrians' ordinal='7' />
+              <column datatype='integer' name='Pedalcyclists' ordinal='8' />
+              <column datatype='integer' name='Other/ Unknown' ordinal='9' />
+              <column datatype='integer' name='Sub Total2' ordinal='10' />
+              <column datatype='integer' name='Total**' ordinal='11' />
+              <column datatype='integer' name='Vehicle Miles Traveled (Billions)' ordinal='12' />
+              <column datatype='integer' name='Resident Population (Thousands)' ordinal='13' />
+              <column datatype='integer' name='Registered Vehicles (Thousands)' ordinal='14' />
+              <column datatype='integer' name='Licensed Drivers (Thousands)' ordinal='15' />
+              <column datatype='real' name='Fatalities per 100 Million Vehicle Miles Traveled' ordinal='16' />
+              <column datatype='real' name='Fatalities per 100,000 Population' ordinal='17' />
+              <column datatype='real' name='Fatalities per 100,000 Registered Vehicles' ordinal='18' />
+              <column datatype='real' name='Fatalities per 100,000 Licensed Drivers' ordinal='19' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[1 accident  per x flights]' value='[Accidents and fatalities per ye].[1 accident  per x flights]' />
+          <map key='[5-year  moving avg]' value='[Accidents and fatalities per ye].[5-year  moving avg]' />
+          <map key='[ASKs (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]' value='[Financial_Results _1947-Present_Full_Data_data.csv].[ASKs (mils)]' />
+          <map key='[ASKs (mils)]' value='[Traffic_and_Operations _1929-Present_Full_Data_data.csv].[ASKs (mils)]' />
+          <map key='[Aboard]' value='[Airplane_Crashes_and_Fatalities_Since_1908.csv].[Aboard]' />
+          <map key='[Accidents  (excl. suicide, sabotage, hijackings etc.) Accidents]' value='[Accidents and fatalities per ye].[Accidents  (excl. suicide, sabotage, hijackings etc.) Accidents]' />
+          <map key='[Accidents  (excl. suicide, sabotage, hijackings etc.) Fatalities]' value='[Accidents and fatalities per ye].[Accidents  (excl. suicide, sabotage, hijackings etc.) Fatalities]' />
+          <map key='[Accidents  (excl. suicide, sabotage, hijackings etc.) Year]' value='[Accidents and fatalities per ye].[Accidents  (excl. suicide, sabotage, hijackings etc.) Year]' />
+          <map key='[Accidents  (incl. suicide, sabotage, hijackings etc.) Accidents]' value='[Accidents and fatalities per ye].[Accidents  (incl. suicide, sabotage, hijackings etc.) Accidents]' />
+          <map key='[Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities]' value='[Accidents and fatalities per ye].[Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities]' />
+          <map key='[Accidents with passenger + cargo flights (incl. suicide, sabotage, hijackings etc.) Accidents]' value='[Accidents and fatalities per ye].[Accidents with passenger + cargo flights (incl. suicide, sabotage, hijackings etc.) Accidents]' />
+          <map key='[Accidents with passenger + cargo flights (incl. suicide, sabotage, hijackings etc.) Fatalities]' value='[Accidents and fatalities per ye].[Accidents with passenger + cargo flights (incl. suicide, sabotage, hijackings etc.) Fatalities]' />
+          <map key='[Accidents with passenger flights  (incl. suicide, sabotage, hijackings etc.) Accidents]' value='[Accidents and fatalities per ye].[Accidents with passenger flights  (incl. suicide, sabotage, hijackings etc.) Accidents]' />
+          <map key='[Accidents with passenger flights  (incl. suicide, sabotage, hijackings etc.) Fatalities]' value='[Accidents and fatalities per ye].[Accidents with passenger flights  (incl. suicide, sabotage, hijackings etc.) Fatalities]' />
+          <map key='[Aircraft Deps (000) (Financial_Results _1947-Present_Full_Data_data.csv)]' value='[Financial_Results _1947-Present_Full_Data_data.csv].[Aircraft Deps (000)]' />
+          <map key='[Aircraft Deps (000)]' value='[Traffic_and_Operations _1929-Present_Full_Data_data.csv].[Aircraft Deps (000)]' />
+          <map key='[Aircraft KMs (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]' value='[Financial_Results _1947-Present_Full_Data_data.csv].[Aircraft KMs (mils)]' />
+          <map key='[Aircraft KMs (mils)]' value='[Traffic_and_Operations _1929-Present_Full_Data_data.csv].[Aircraft KMs (mils)]' />
+          <map key='[Cargo RTKs (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]' value='[Financial_Results _1947-Present_Full_Data_data.csv].[Cargo RTKs (mils)]' />
+          <map key='[Cargo RTKs (mils)]' value='[Traffic_and_Operations _1929-Present_Full_Data_data.csv].[Cargo RTKs (mils)]' />
+          <map key='[Corporate jets (civilian) Accidents]' value='[Accidents and fatalities per ye].[Corporate jets (civilian) Accidents]' />
+          <map key='[Corporate jets (civilian) Fatalities]' value='[Accidents and fatalities per ye].[Corporate jets (civilian) Fatalities]' />
+          <map key='[Date]' value='[Airplane_Crashes_and_Fatalities_Since_1908.csv].[Date]' />
+          <map key='[Drivers]' value='[fars_df.csv].[Drivers]' />
+          <map key='[F10]' value='[Accidents and fatalities per ye].[F10]' />
+          <map key='[F13]' value='[Accidents and fatalities per ye].[F13]' />
+          <map key='[F14]' value='[Accidents and fatalities per ye].[F14]' />
+          <map key='[F19]' value='[Accidents and fatalities per ye].[F19]' />
+          <map key='[F1]' value='[fars_df.csv].[F1]' />
+          <map key='[F20]' value='[Accidents and fatalities per ye].[F20]' />
+          <map key='[F4]' value='[Accidents and fatalities per ye].[F4]' />
+          <map key='[F7]' value='[Accidents and fatalities per ye].[F7]' />
+          <map key='[Fatal Crashes]' value='[fars_df.csv].[Fatal Crashes]' />
+          <map key='[Fatalities per 100 Million Vehicle Miles Traveled]' value='[fars_df.csv].[Fatalities per 100 Million Vehicle Miles Traveled]' />
+          <map key='[Fatalities per 100,000 Licensed Drivers]' value='[fars_df.csv].[Fatalities per 100,000 Licensed Drivers]' />
+          <map key='[Fatalities per 100,000 Population]' value='[fars_df.csv].[Fatalities per 100,000 Population]' />
+          <map key='[Fatalities per 100,000 Registered Vehicles]' value='[fars_df.csv].[Fatalities per 100,000 Registered Vehicles]' />
+          <map key='[Fatalities]' value='[Airplane_Crashes_and_Fatalities_Since_1908.csv].[Fatalities]' />
+          <map key='[Flight #]' value='[Airplane_Crashes_and_Fatalities_Since_1908.csv].[Flight #]' />
+          <map key='[Freight RTKs (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]' value='[Financial_Results _1947-Present_Full_Data_data.csv].[Freight RTKs (mils)]' />
+          <map key='[Freight RTKs (mils)]' value='[Traffic_and_Operations _1929-Present_Full_Data_data.csv].[Freight RTKs (mils)]' />
+          <map key='[Freight Tonnes (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]' value='[Financial_Results _1947-Present_Full_Data_data.csv].[Freight Tonnes (mils)]' />
+          <map key='[Freight Tonnes (mils)]' value='[Traffic_and_Operations _1929-Present_Full_Data_data.csv].[Freight Tonnes (mils)]' />
+          <map key='[Ground]' value='[Airplane_Crashes_and_Fatalities_Since_1908.csv].[Ground]' />
+          <map key='[Licensed Drivers (Thousands)]' value='[fars_df.csv].[Licensed Drivers (Thousands)]' />
+          <map key='[Location]' value='[Airplane_Crashes_and_Fatalities_Since_1908.csv].[Location]' />
+          <map key='[Mail RTKs (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]' value='[Financial_Results _1947-Present_Full_Data_data.csv].[Mail RTKs (mils)]' />
+          <map key='[Mail RTKs (mils)]' value='[Traffic_and_Operations _1929-Present_Full_Data_data.csv].[Mail RTKs (mils)]' />
+          <map key='[Motorcyclists]' value='[fars_df.csv].[Motorcyclists]' />
+          <map key='[NetMargin (Financial_Results _1947-Present_Full_Data_data.csv)]' value='[Financial_Results _1947-Present_Full_Data_data.csv].[NetMargin]' />
+          <map key='[NetMargin]' value='[Traffic_and_Operations _1929-Present_Full_Data_data.csv].[NetMargin]' />
+          <map key='[NetProfit (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]' value='[Financial_Results _1947-Present_Full_Data_data.csv].[NetProfit (mils)]' />
+          <map key='[NetProfit (mils)]' value='[Traffic_and_Operations _1929-Present_Full_Data_data.csv].[NetProfit (mils)]' />
+          <map key='[Number of Records (Financial_Results _1947-Present_Full_Data_data.csv)]' value='[Financial_Results _1947-Present_Full_Data_data.csv].[Number of Records]' />
+          <map key='[Number of Records]' value='[Traffic_and_Operations _1929-Present_Full_Data_data.csv].[Number of Records]' />
+          <map key='[OpProfit (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]' value='[Financial_Results _1947-Present_Full_Data_data.csv].[OpProfit (mils)]' />
+          <map key='[OpProfit (mils)]' value='[Traffic_and_Operations _1929-Present_Full_Data_data.csv].[OpProfit (mils)]' />
+          <map key='[OpRevenues (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]' value='[Financial_Results _1947-Present_Full_Data_data.csv].[OpRevenues (mils)]' />
+          <map key='[OpRevenues (mils)]' value='[Traffic_and_Operations _1929-Present_Full_Data_data.csv].[OpRevenues (mils)]' />
+          <map key='[Operator]' value='[Airplane_Crashes_and_Fatalities_Since_1908.csv].[Operator]' />
+          <map key='[Other/ Unknown]' value='[fars_df.csv].[Other/ Unknown]' />
+          <map key='[PLF (Financial_Results _1947-Present_Full_Data_data.csv)]' value='[Financial_Results _1947-Present_Full_Data_data.csv].[PLF]' />
+          <map key='[PLF]' value='[Traffic_and_Operations _1929-Present_Full_Data_data.csv].[PLF]' />
+          <map key='[Passengers]' value='[fars_df.csv].[Passengers]' />
+          <map key='[Pax (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]' value='[Financial_Results _1947-Present_Full_Data_data.csv].[Pax (mils)]' />
+          <map key='[Pax (mils)]' value='[Traffic_and_Operations _1929-Present_Full_Data_data.csv].[Pax (mils)]' />
+          <map key='[Pedalcyclists]' value='[fars_df.csv].[Pedalcyclists]' />
+          <map key='[Pedestrians]' value='[fars_df.csv].[Pedestrians]' />
+          <map key='[RPKs (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]' value='[Financial_Results _1947-Present_Full_Data_data.csv].[RPKs (mils)]' />
+          <map key='[RPKs (mils)]' value='[Traffic_and_Operations _1929-Present_Full_Data_data.csv].[RPKs (mils)]' />
+          <map key='[Registered Vehicles (Thousands)]' value='[fars_df.csv].[Registered Vehicles (Thousands)]' />
+          <map key='[Registration]' value='[Airplane_Crashes_and_Fatalities_Since_1908.csv].[Registration]' />
+          <map key='[Resident Population (Thousands)]' value='[fars_df.csv].[Resident Population (Thousands)]' />
+          <map key='[Route]' value='[Airplane_Crashes_and_Fatalities_Since_1908.csv].[Route]' />
+          <map key='[Sub Total1]' value='[fars_df.csv].[Sub Total1]' />
+          <map key='[Sub Total2]' value='[fars_df.csv].[Sub Total2]' />
+          <map key='[Summary]' value='[Airplane_Crashes_and_Fatalities_Since_1908.csv].[Summary]' />
+          <map key='[Time]' value='[Airplane_Crashes_and_Fatalities_Since_1908.csv].[Time]' />
+          <map key='[Title (Financial_Results _1947-Present_Full_Data_data.csv)]' value='[Financial_Results _1947-Present_Full_Data_data.csv].[Title]' />
+          <map key='[Title]' value='[Traffic_and_Operations _1929-Present_Full_Data_data.csv].[Title]' />
+          <map key='[Total**]' value='[fars_df.csv].[Total**]' />
+          <map key='[Type]' value='[Airplane_Crashes_and_Fatalities_Since_1908.csv].[Type]' />
+          <map key='[Unknown]' value='[fars_df.csv].[Unknown]' />
+          <map key='[Vehicle Miles Traveled (Billions)]' value='[fars_df.csv].[Vehicle Miles Traveled (Billions)]' />
+          <map key='[World air traffic (departures)]' value='[Accidents and fatalities per ye].[World air traffic (departures)]' />
+          <map key='[Year (Financial_Results _1947-Present_Full_Data_data.csv)]' value='[Financial_Results _1947-Present_Full_Data_data.csv].[Year]' />
+          <map key='[Year]' value='[Traffic_and_Operations _1929-Present_Full_Data_data.csv].[Year]' />
+          <map key='[_Item Type (Financial_Results _1947-Present_Full_Data_data.csv)]' value='[Financial_Results _1947-Present_Full_Data_data.csv].[_Item Type]' />
+          <map key='[_Item Type]' value='[Traffic_and_Operations _1929-Present_Full_Data_data.csv].[_Item Type]' />
+          <map key='[_Path (Financial_Results _1947-Present_Full_Data_data.csv)]' value='[Financial_Results _1947-Present_Full_Data_data.csv].[_Path]' />
+          <map key='[_Path]' value='[Traffic_and_Operations _1929-Present_Full_Data_data.csv].[_Path]' />
+          <map key='[cn/In]' value='[Airplane_Crashes_and_Fatalities_Since_1908.csv].[cn/In]' />
+          <map key='[fatal accidents  per mln flights]' value='[Accidents and fatalities per ye].[fatal accidents  per mln flights]' />
+          <map key='[moving 5 year average # of accidents]' value='[Accidents and fatalities per ye].[moving 5 year average # of accidents]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Airplane_Crashes_and_Fatalities_Since_1908.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:M5269:no:A1:M5269:1&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Accidents and fatalities per ye]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>4</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:W79:no:A1:W79:2&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>1272</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Traffic_and_Operations _1929-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Financial_Results _1947-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[fars_df.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:T27:no:A1:T27:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>520</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Airplane_Crashes_and_Fatalities_Since_1908.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Airplane_Crashes_and_Fatalities_Since_1908.csv_D7F4D929DCAA4F52BAE330F7BECF817E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[Time]</local-name>
+            <parent-name>[Airplane_Crashes_and_Fatalities_Since_1908.csv]</parent-name>
+            <remote-alias>Time</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Airplane_Crashes_and_Fatalities_Since_1908.csv_D7F4D929DCAA4F52BAE330F7BECF817E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[Airplane_Crashes_and_Fatalities_Since_1908.csv]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Airplane_Crashes_and_Fatalities_Since_1908.csv_D7F4D929DCAA4F52BAE330F7BECF817E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operator</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Operator]</local-name>
+            <parent-name>[Airplane_Crashes_and_Fatalities_Since_1908.csv]</parent-name>
+            <remote-alias>Operator</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Airplane_Crashes_and_Fatalities_Since_1908.csv_D7F4D929DCAA4F52BAE330F7BECF817E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Flight #</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Flight #]</local-name>
+            <parent-name>[Airplane_Crashes_and_Fatalities_Since_1908.csv]</parent-name>
+            <remote-alias>Flight #</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Airplane_Crashes_and_Fatalities_Since_1908.csv_D7F4D929DCAA4F52BAE330F7BECF817E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Route</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Route]</local-name>
+            <parent-name>[Airplane_Crashes_and_Fatalities_Since_1908.csv]</parent-name>
+            <remote-alias>Route</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Airplane_Crashes_and_Fatalities_Since_1908.csv_D7F4D929DCAA4F52BAE330F7BECF817E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type]</local-name>
+            <parent-name>[Airplane_Crashes_and_Fatalities_Since_1908.csv]</parent-name>
+            <remote-alias>Type</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Airplane_Crashes_and_Fatalities_Since_1908.csv_D7F4D929DCAA4F52BAE330F7BECF817E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Registration</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Registration]</local-name>
+            <parent-name>[Airplane_Crashes_and_Fatalities_Since_1908.csv]</parent-name>
+            <remote-alias>Registration</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Airplane_Crashes_and_Fatalities_Since_1908.csv_D7F4D929DCAA4F52BAE330F7BECF817E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cn/In</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cn/In]</local-name>
+            <parent-name>[Airplane_Crashes_and_Fatalities_Since_1908.csv]</parent-name>
+            <remote-alias>cn/In</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Airplane_Crashes_and_Fatalities_Since_1908.csv_D7F4D929DCAA4F52BAE330F7BECF817E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aboard</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Aboard]</local-name>
+            <parent-name>[Airplane_Crashes_and_Fatalities_Since_1908.csv]</parent-name>
+            <remote-alias>Aboard</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Airplane_Crashes_and_Fatalities_Since_1908.csv_D7F4D929DCAA4F52BAE330F7BECF817E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fatalities</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fatalities]</local-name>
+            <parent-name>[Airplane_Crashes_and_Fatalities_Since_1908.csv]</parent-name>
+            <remote-alias>Fatalities</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Airplane_Crashes_and_Fatalities_Since_1908.csv_D7F4D929DCAA4F52BAE330F7BECF817E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ground</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ground]</local-name>
+            <parent-name>[Airplane_Crashes_and_Fatalities_Since_1908.csv]</parent-name>
+            <remote-alias>Ground</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Airplane_Crashes_and_Fatalities_Since_1908.csv_D7F4D929DCAA4F52BAE330F7BECF817E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Summary</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Summary]</local-name>
+            <parent-name>[Airplane_Crashes_and_Fatalities_Since_1908.csv]</parent-name>
+            <remote-alias>Summary</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Airplane_Crashes_and_Fatalities_Since_1908.csv_D7F4D929DCAA4F52BAE330F7BECF817E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accidents  (excl. suicide, sabotage, hijackings etc.) Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Accidents  (excl. suicide, sabotage, hijackings etc.) Year]</local-name>
+            <parent-name>[Accidents and fatalities per ye]</parent-name>
+            <remote-alias>Accidents  (excl. suicide, sabotage, hijackings etc.) Year</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accidents  (excl. suicide, sabotage, hijackings etc.) Accidents</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Accidents  (excl. suicide, sabotage, hijackings etc.) Accidents]</local-name>
+            <parent-name>[Accidents and fatalities per ye]</parent-name>
+            <remote-alias>Accidents  (excl. suicide, sabotage, hijackings etc.) Accidents</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accidents  (excl. suicide, sabotage, hijackings etc.) Fatalities</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Accidents  (excl. suicide, sabotage, hijackings etc.) Fatalities]</local-name>
+            <parent-name>[Accidents and fatalities per ye]</parent-name>
+            <remote-alias>Accidents  (excl. suicide, sabotage, hijackings etc.) Fatalities</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F4</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F4]</local-name>
+            <parent-name>[Accidents and fatalities per ye]</parent-name>
+            <remote-alias>F4</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accidents  (incl. suicide, sabotage, hijackings etc.) Accidents</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Accidents  (incl. suicide, sabotage, hijackings etc.) Accidents]</local-name>
+            <parent-name>[Accidents and fatalities per ye]</parent-name>
+            <remote-alias>Accidents  (incl. suicide, sabotage, hijackings etc.) Accidents</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities]</local-name>
+            <parent-name>[Accidents and fatalities per ye]</parent-name>
+            <remote-alias>Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F7</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F7]</local-name>
+            <parent-name>[Accidents and fatalities per ye]</parent-name>
+            <remote-alias>F7</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accidents with passenger flights  (incl. suicide, sabotage, hijackings etc.) Accidents</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Accidents with passenger flights  (incl. suicide, sabotage, hijackings etc.) Accidents]</local-name>
+            <parent-name>[Accidents and fatalities per ye]</parent-name>
+            <remote-alias>Accidents with passenger flights  (incl. suicide, sabotage, hijackings etc.) Accidents</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accidents with passenger flights  (incl. suicide, sabotage, hijackings etc.) Fatalities</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Accidents with passenger flights  (incl. suicide, sabotage, hijackings etc.) Fatalities]</local-name>
+            <parent-name>[Accidents and fatalities per ye]</parent-name>
+            <remote-alias>Accidents with passenger flights  (incl. suicide, sabotage, hijackings etc.) Fatalities</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F10</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F10]</local-name>
+            <parent-name>[Accidents and fatalities per ye]</parent-name>
+            <remote-alias>F10</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accidents with passenger + cargo flights (incl. suicide, sabotage, hijackings etc.) Accidents</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Accidents with passenger + cargo flights (incl. suicide, sabotage, hijackings etc.) Accidents]</local-name>
+            <parent-name>[Accidents and fatalities per ye]</parent-name>
+            <remote-alias>Accidents with passenger + cargo flights (incl. suicide, sabotage, hijackings etc.) Accidents</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accidents with passenger + cargo flights (incl. suicide, sabotage, hijackings etc.) Fatalities</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Accidents with passenger + cargo flights (incl. suicide, sabotage, hijackings etc.) Fatalities]</local-name>
+            <parent-name>[Accidents and fatalities per ye]</parent-name>
+            <remote-alias>Accidents with passenger + cargo flights (incl. suicide, sabotage, hijackings etc.) Fatalities</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F13</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F13]</local-name>
+            <parent-name>[Accidents and fatalities per ye]</parent-name>
+            <remote-alias>F13</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F14</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F14]</local-name>
+            <parent-name>[Accidents and fatalities per ye]</parent-name>
+            <remote-alias>F14</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>World air traffic (departures)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[World air traffic (departures)]</local-name>
+            <parent-name>[Accidents and fatalities per ye]</parent-name>
+            <remote-alias>World air traffic (departures)</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1 accident  per x flights</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[1 accident  per x flights]</local-name>
+            <parent-name>[Accidents and fatalities per ye]</parent-name>
+            <remote-alias>1 accident  per x flights</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fatal accidents  per mln flights</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fatal accidents  per mln flights]</local-name>
+            <parent-name>[Accidents and fatalities per ye]</parent-name>
+            <remote-alias>fatal accidents  per mln flights</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>5-year  moving avg</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[5-year  moving avg]</local-name>
+            <parent-name>[Accidents and fatalities per ye]</parent-name>
+            <remote-alias>5-year  moving avg</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F19</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F19]</local-name>
+            <parent-name>[Accidents and fatalities per ye]</parent-name>
+            <remote-alias>F19</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F20</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F20]</local-name>
+            <parent-name>[Accidents and fatalities per ye]</parent-name>
+            <remote-alias>F20</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Corporate jets (civilian) Accidents</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Corporate jets (civilian) Accidents]</local-name>
+            <parent-name>[Accidents and fatalities per ye]</parent-name>
+            <remote-alias>Corporate jets (civilian) Accidents</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Corporate jets (civilian) Fatalities</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Corporate jets (civilian) Fatalities]</local-name>
+            <parent-name>[Accidents and fatalities per ye]</parent-name>
+            <remote-alias>Corporate jets (civilian) Fatalities</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>moving 5 year average # of accidents</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[moving 5 year average # of accidents]</local-name>
+            <parent-name>[Accidents and fatalities per ye]</parent-name>
+            <remote-alias>moving 5 year average # of accidents</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Traffic_and_Operations _1929-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_and_Operations _1929-Present_Full_Data_data.csv_48196F4CB0F949B58E688DBD3AC03524]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_Item Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[_Item Type]</local-name>
+            <parent-name>[Traffic_and_Operations _1929-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>_Item Type</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_and_Operations _1929-Present_Full_Data_data.csv_48196F4CB0F949B58E688DBD3AC03524]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_Path</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[_Path]</local-name>
+            <parent-name>[Traffic_and_Operations _1929-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>_Path</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_and_Operations _1929-Present_Full_Data_data.csv_48196F4CB0F949B58E688DBD3AC03524]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Title</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Title]</local-name>
+            <parent-name>[Traffic_and_Operations _1929-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>Title</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_and_Operations _1929-Present_Full_Data_data.csv_48196F4CB0F949B58E688DBD3AC03524]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aircraft Deps (000)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Aircraft Deps (000)]</local-name>
+            <parent-name>[Traffic_and_Operations _1929-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>Aircraft Deps (000)</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_and_Operations _1929-Present_Full_Data_data.csv_48196F4CB0F949B58E688DBD3AC03524]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aircraft KMs (mils)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Aircraft KMs (mils)]</local-name>
+            <parent-name>[Traffic_and_Operations _1929-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>Aircraft KMs (mils)</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_and_Operations _1929-Present_Full_Data_data.csv_48196F4CB0F949B58E688DBD3AC03524]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ASKs (mils)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ASKs (mils)]</local-name>
+            <parent-name>[Traffic_and_Operations _1929-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>ASKs (mils)</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_and_Operations _1929-Present_Full_Data_data.csv_48196F4CB0F949B58E688DBD3AC03524]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cargo RTKs (mils)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Cargo RTKs (mils)]</local-name>
+            <parent-name>[Traffic_and_Operations _1929-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>Cargo RTKs (mils)</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_and_Operations _1929-Present_Full_Data_data.csv_48196F4CB0F949B58E688DBD3AC03524]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Freight RTKs (mils)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Freight RTKs (mils)]</local-name>
+            <parent-name>[Traffic_and_Operations _1929-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>Freight RTKs (mils)</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_and_Operations _1929-Present_Full_Data_data.csv_48196F4CB0F949B58E688DBD3AC03524]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Freight Tonnes (mils)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Freight Tonnes (mils)]</local-name>
+            <parent-name>[Traffic_and_Operations _1929-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>Freight Tonnes (mils)</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_and_Operations _1929-Present_Full_Data_data.csv_48196F4CB0F949B58E688DBD3AC03524]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mail RTKs (mils)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mail RTKs (mils)]</local-name>
+            <parent-name>[Traffic_and_Operations _1929-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>Mail RTKs (mils)</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_and_Operations _1929-Present_Full_Data_data.csv_48196F4CB0F949B58E688DBD3AC03524]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NetMargin</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NetMargin]</local-name>
+            <parent-name>[Traffic_and_Operations _1929-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>NetMargin</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_and_Operations _1929-Present_Full_Data_data.csv_48196F4CB0F949B58E688DBD3AC03524]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NetProfit (mils)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NetProfit (mils)]</local-name>
+            <parent-name>[Traffic_and_Operations _1929-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>NetProfit (mils)</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_and_Operations _1929-Present_Full_Data_data.csv_48196F4CB0F949B58E688DBD3AC03524]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Records</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Records]</local-name>
+            <parent-name>[Traffic_and_Operations _1929-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>Number of Records</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_and_Operations _1929-Present_Full_Data_data.csv_48196F4CB0F949B58E688DBD3AC03524]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OpProfit (mils)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OpProfit (mils)]</local-name>
+            <parent-name>[Traffic_and_Operations _1929-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>OpProfit (mils)</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_and_Operations _1929-Present_Full_Data_data.csv_48196F4CB0F949B58E688DBD3AC03524]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OpRevenues (mils)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OpRevenues (mils)]</local-name>
+            <parent-name>[Traffic_and_Operations _1929-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>OpRevenues (mils)</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_and_Operations _1929-Present_Full_Data_data.csv_48196F4CB0F949B58E688DBD3AC03524]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pax (mils)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pax (mils)]</local-name>
+            <parent-name>[Traffic_and_Operations _1929-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>Pax (mils)</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_and_Operations _1929-Present_Full_Data_data.csv_48196F4CB0F949B58E688DBD3AC03524]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PLF</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PLF]</local-name>
+            <parent-name>[Traffic_and_Operations _1929-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>PLF</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_and_Operations _1929-Present_Full_Data_data.csv_48196F4CB0F949B58E688DBD3AC03524]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RPKs (mils)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RPKs (mils)]</local-name>
+            <parent-name>[Traffic_and_Operations _1929-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>RPKs (mils)</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Traffic_and_Operations _1929-Present_Full_Data_data.csv_48196F4CB0F949B58E688DBD3AC03524]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year (Financial_Results _1947-Present_Full_Data_data.csv)]</local-name>
+            <parent-name>[Financial_Results _1947-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial_Results _1947-Present_Full_Data_data.csv_F290BA210077422F85972146DECB1270]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_Item Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[_Item Type (Financial_Results _1947-Present_Full_Data_data.csv)]</local-name>
+            <parent-name>[Financial_Results _1947-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>_Item Type</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial_Results _1947-Present_Full_Data_data.csv_F290BA210077422F85972146DECB1270]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_Path</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[_Path (Financial_Results _1947-Present_Full_Data_data.csv)]</local-name>
+            <parent-name>[Financial_Results _1947-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>_Path</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial_Results _1947-Present_Full_Data_data.csv_F290BA210077422F85972146DECB1270]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Title</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Title (Financial_Results _1947-Present_Full_Data_data.csv)]</local-name>
+            <parent-name>[Financial_Results _1947-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>Title</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial_Results _1947-Present_Full_Data_data.csv_F290BA210077422F85972146DECB1270]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aircraft Deps (000)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Aircraft Deps (000) (Financial_Results _1947-Present_Full_Data_data.csv)]</local-name>
+            <parent-name>[Financial_Results _1947-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>Aircraft Deps (000)</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial_Results _1947-Present_Full_Data_data.csv_F290BA210077422F85972146DECB1270]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aircraft KMs (mils)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Aircraft KMs (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]</local-name>
+            <parent-name>[Financial_Results _1947-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>Aircraft KMs (mils)</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial_Results _1947-Present_Full_Data_data.csv_F290BA210077422F85972146DECB1270]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ASKs (mils)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ASKs (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]</local-name>
+            <parent-name>[Financial_Results _1947-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>ASKs (mils)</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial_Results _1947-Present_Full_Data_data.csv_F290BA210077422F85972146DECB1270]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cargo RTKs (mils)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Cargo RTKs (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]</local-name>
+            <parent-name>[Financial_Results _1947-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>Cargo RTKs (mils)</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial_Results _1947-Present_Full_Data_data.csv_F290BA210077422F85972146DECB1270]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Freight RTKs (mils)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Freight RTKs (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]</local-name>
+            <parent-name>[Financial_Results _1947-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>Freight RTKs (mils)</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial_Results _1947-Present_Full_Data_data.csv_F290BA210077422F85972146DECB1270]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Freight Tonnes (mils)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Freight Tonnes (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]</local-name>
+            <parent-name>[Financial_Results _1947-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>Freight Tonnes (mils)</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial_Results _1947-Present_Full_Data_data.csv_F290BA210077422F85972146DECB1270]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mail RTKs (mils)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mail RTKs (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]</local-name>
+            <parent-name>[Financial_Results _1947-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>Mail RTKs (mils)</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial_Results _1947-Present_Full_Data_data.csv_F290BA210077422F85972146DECB1270]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NetMargin</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NetMargin (Financial_Results _1947-Present_Full_Data_data.csv)]</local-name>
+            <parent-name>[Financial_Results _1947-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>NetMargin</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial_Results _1947-Present_Full_Data_data.csv_F290BA210077422F85972146DECB1270]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NetProfit (mils)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NetProfit (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]</local-name>
+            <parent-name>[Financial_Results _1947-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>NetProfit (mils)</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial_Results _1947-Present_Full_Data_data.csv_F290BA210077422F85972146DECB1270]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Records</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Records (Financial_Results _1947-Present_Full_Data_data.csv)]</local-name>
+            <parent-name>[Financial_Results _1947-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>Number of Records</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial_Results _1947-Present_Full_Data_data.csv_F290BA210077422F85972146DECB1270]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OpProfit (mils)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OpProfit (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]</local-name>
+            <parent-name>[Financial_Results _1947-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>OpProfit (mils)</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial_Results _1947-Present_Full_Data_data.csv_F290BA210077422F85972146DECB1270]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OpRevenues (mils)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OpRevenues (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]</local-name>
+            <parent-name>[Financial_Results _1947-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>OpRevenues (mils)</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial_Results _1947-Present_Full_Data_data.csv_F290BA210077422F85972146DECB1270]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pax (mils)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pax (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]</local-name>
+            <parent-name>[Financial_Results _1947-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>Pax (mils)</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial_Results _1947-Present_Full_Data_data.csv_F290BA210077422F85972146DECB1270]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PLF</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PLF (Financial_Results _1947-Present_Full_Data_data.csv)]</local-name>
+            <parent-name>[Financial_Results _1947-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>PLF</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial_Results _1947-Present_Full_Data_data.csv_F290BA210077422F85972146DECB1270]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RPKs (mils)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RPKs (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]</local-name>
+            <parent-name>[Financial_Results _1947-Present_Full_Data_data.csv]</parent-name>
+            <remote-alias>RPKs (mils)</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial_Results _1947-Present_Full_Data_data.csv_F290BA210077422F85972146DECB1270]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[fars_df.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fars_df.csv_275CEB45F4EC49398B59E0E3141EFAA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fatal Crashes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fatal Crashes]</local-name>
+            <parent-name>[fars_df.csv]</parent-name>
+            <remote-alias>Fatal Crashes</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fars_df.csv_275CEB45F4EC49398B59E0E3141EFAA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Drivers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Drivers]</local-name>
+            <parent-name>[fars_df.csv]</parent-name>
+            <remote-alias>Drivers</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fars_df.csv_275CEB45F4EC49398B59E0E3141EFAA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passengers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Passengers]</local-name>
+            <parent-name>[fars_df.csv]</parent-name>
+            <remote-alias>Passengers</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fars_df.csv_275CEB45F4EC49398B59E0E3141EFAA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unknown</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Unknown]</local-name>
+            <parent-name>[fars_df.csv]</parent-name>
+            <remote-alias>Unknown</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fars_df.csv_275CEB45F4EC49398B59E0E3141EFAA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sub Total1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sub Total1]</local-name>
+            <parent-name>[fars_df.csv]</parent-name>
+            <remote-alias>Sub Total1</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fars_df.csv_275CEB45F4EC49398B59E0E3141EFAA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Motorcyclists</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Motorcyclists]</local-name>
+            <parent-name>[fars_df.csv]</parent-name>
+            <remote-alias>Motorcyclists</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fars_df.csv_275CEB45F4EC49398B59E0E3141EFAA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pedestrians</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pedestrians]</local-name>
+            <parent-name>[fars_df.csv]</parent-name>
+            <remote-alias>Pedestrians</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fars_df.csv_275CEB45F4EC49398B59E0E3141EFAA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pedalcyclists</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pedalcyclists]</local-name>
+            <parent-name>[fars_df.csv]</parent-name>
+            <remote-alias>Pedalcyclists</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fars_df.csv_275CEB45F4EC49398B59E0E3141EFAA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other/ Unknown</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Other/ Unknown]</local-name>
+            <parent-name>[fars_df.csv]</parent-name>
+            <remote-alias>Other/ Unknown</remote-alias>
+            <ordinal>83</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fars_df.csv_275CEB45F4EC49398B59E0E3141EFAA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sub Total2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sub Total2]</local-name>
+            <parent-name>[fars_df.csv]</parent-name>
+            <remote-alias>Sub Total2</remote-alias>
+            <ordinal>84</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fars_df.csv_275CEB45F4EC49398B59E0E3141EFAA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total**</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total**]</local-name>
+            <parent-name>[fars_df.csv]</parent-name>
+            <remote-alias>Total**</remote-alias>
+            <ordinal>85</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fars_df.csv_275CEB45F4EC49398B59E0E3141EFAA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle Miles Traveled (Billions)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Vehicle Miles Traveled (Billions)]</local-name>
+            <parent-name>[fars_df.csv]</parent-name>
+            <remote-alias>Vehicle Miles Traveled (Billions)</remote-alias>
+            <ordinal>86</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fars_df.csv_275CEB45F4EC49398B59E0E3141EFAA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Resident Population (Thousands)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Resident Population (Thousands)]</local-name>
+            <parent-name>[fars_df.csv]</parent-name>
+            <remote-alias>Resident Population (Thousands)</remote-alias>
+            <ordinal>87</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fars_df.csv_275CEB45F4EC49398B59E0E3141EFAA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Registered Vehicles (Thousands)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Registered Vehicles (Thousands)]</local-name>
+            <parent-name>[fars_df.csv]</parent-name>
+            <remote-alias>Registered Vehicles (Thousands)</remote-alias>
+            <ordinal>88</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fars_df.csv_275CEB45F4EC49398B59E0E3141EFAA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Licensed Drivers (Thousands)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Licensed Drivers (Thousands)]</local-name>
+            <parent-name>[fars_df.csv]</parent-name>
+            <remote-alias>Licensed Drivers (Thousands)</remote-alias>
+            <ordinal>89</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fars_df.csv_275CEB45F4EC49398B59E0E3141EFAA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fatalities per 100 Million Vehicle Miles Traveled</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fatalities per 100 Million Vehicle Miles Traveled]</local-name>
+            <parent-name>[fars_df.csv]</parent-name>
+            <remote-alias>Fatalities per 100 Million Vehicle Miles Traveled</remote-alias>
+            <ordinal>90</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fars_df.csv_275CEB45F4EC49398B59E0E3141EFAA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fatalities per 100,000 Population</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fatalities per 100,000 Population]</local-name>
+            <parent-name>[fars_df.csv]</parent-name>
+            <remote-alias>Fatalities per 100,000 Population</remote-alias>
+            <ordinal>91</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fars_df.csv_275CEB45F4EC49398B59E0E3141EFAA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fatalities per 100,000 Registered Vehicles</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fatalities per 100,000 Registered Vehicles]</local-name>
+            <parent-name>[fars_df.csv]</parent-name>
+            <remote-alias>Fatalities per 100,000 Registered Vehicles</remote-alias>
+            <ordinal>92</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fars_df.csv_275CEB45F4EC49398B59E0E3141EFAA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fatalities per 100,000 Licensed Drivers</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fatalities per 100,000 Licensed Drivers]</local-name>
+            <parent-name>[fars_df.csv]</parent-name>
+            <remote-alias>Fatalities per 100,000 Licensed Drivers</remote-alias>
+            <ordinal>93</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fars_df.csv_275CEB45F4EC49398B59E0E3141EFAA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='1 Accident  Per X Flights' datatype='real' name='[1 accident  per x flights]' role='measure' type='quantitative' />
+      <column caption='5-Year  Moving Avg' datatype='real' name='[5-year  moving avg]' role='measure' type='quantitative' />
+      <column caption='ASKs (mils) (Financial Results  1947-Present Full Data data.csv)' datatype='real' name='[ASKs (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Accidents  (excl. suicide, sabotage, hijackings etc.) Year]' role='dimension' type='ordinal' />
+      <column caption='Aircraft Deps (000) (Financial Results  1947-Present Full Data data.csv)' datatype='real' name='[Aircraft Deps (000) (Financial_Results _1947-Present_Full_Data_data.csv)]' role='measure' type='quantitative' />
+      <column caption='Aircraft KMs (mils) (Financial Results  1947-Present Full Data data.csv)' datatype='real' name='[Aircraft KMs (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]' role='measure' type='quantitative' />
+      <column caption='Deaths per Kilometer' datatype='real' name='[Calculation_1021754227280650244]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities]/[RPKs (mils)]' />
+      </column>
+      <column aggregation='Count' caption='Calculation1' datatype='integer' datatype-customized='true' name='[Calculation_1021754227289186309]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='YEAR([Date])' />
+      </column>
+      <column caption='Cargo RTKs (mils) (Financial Results  1947-Present Full Data data.csv)' datatype='real' name='[Cargo RTKs (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[F10]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[F19]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[F4]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[F7]' role='measure' type='quantitative' />
+      <column caption='Freight RTKs (mils) (Financial Results  1947-Present Full Data data.csv)' datatype='real' name='[Freight RTKs (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]' role='measure' type='quantitative' />
+      <column caption='Freight Tonnes (mils) (Financial Results  1947-Present Full Data data.csv)' datatype='real' name='[Freight Tonnes (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]' role='measure' type='quantitative' />
+      <column caption='Mail RTKs (mils) (Financial Results  1947-Present Full Data data.csv)' datatype='real' name='[Mail RTKs (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]' role='measure' type='quantitative' />
+      <column caption='NetMargin (Financial Results  1947-Present Full Data data.csv)' datatype='real' name='[NetMargin (Financial_Results _1947-Present_Full_Data_data.csv)]' role='measure' type='quantitative' />
+      <column caption='Net Margin' datatype='real' name='[NetMargin]' role='measure' type='quantitative' />
+      <column caption='NetProfit (mils) (Financial Results  1947-Present Full Data data.csv)' datatype='integer' name='[NetProfit (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]' role='measure' type='quantitative' />
+      <column caption='Number of Records (Financial Results  1947-Present Full Data data.csv)' datatype='integer' name='[Number of Records (Financial_Results _1947-Present_Full_Data_data.csv)]' role='measure' type='quantitative' />
+      <column caption='OpProfit (mils) (Financial Results  1947-Present Full Data data.csv)' datatype='integer' name='[OpProfit (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]' role='measure' type='quantitative' />
+      <column caption='OpRevenues (mils) (Financial Results  1947-Present Full Data data.csv)' datatype='integer' name='[OpRevenues (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]' role='measure' type='quantitative' />
+      <column caption='PLF (Financial Results  1947-Present Full Data data.csv)' datatype='real' name='[PLF (Financial_Results _1947-Present_Full_Data_data.csv)]' role='measure' type='quantitative' />
+      <column caption='Pax (mils) (Financial Results  1947-Present Full Data data.csv)' datatype='real' name='[Pax (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]' role='measure' type='quantitative' />
+      <column caption='RPKs (mils) (Financial Results  1947-Present Full Data data.csv)' datatype='real' name='[RPKs (mils) (Financial_Results _1947-Present_Full_Data_data.csv)]' role='measure' type='quantitative' />
+      <column datatype='real' default-format='N' name='[RPKs (mils)]' role='measure' type='quantitative' />
+      <column aggregation='Hour' datatype='datetime' name='[Time]' role='dimension' type='ordinal' />
+      <column caption='Title (Financial Results  1947-Present Full Data data.csv)' datatype='integer' name='[Title (Financial_Results _1947-Present_Full_Data_data.csv)]' role='measure' type='quantitative' />
+      <column caption='Year (Financial Results  1947-Present Full Data data.csv)' datatype='integer' name='[Year (Financial_Results _1947-Present_Full_Data_data.csv)]' role='dimension' type='quantitative' />
+      <column datatype='date' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='_Item Type (Financial Results  1947-Present Full Data data.csv)' datatype='string' name='[_Item Type (Financial_Results _1947-Present_Full_Data_data.csv)]' role='dimension' type='nominal' />
+      <column caption='_Path (Financial Results  1947-Present Full Data data.csv)' datatype='string' name='[_Path (Financial_Results _1947-Present_Full_Data_data.csv)]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Accidents and fatalities per ye' datatype='table' name='[__tableau_internal_object_id__].[Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Airplane_Crashes_and_Fatalities_Since_1908.csv' datatype='table' name='[__tableau_internal_object_id__].[Airplane_Crashes_and_Fatalities_Since_1908.csv_D7F4D929DCAA4F52BAE330F7BECF817E]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Financial_Results _1947-Present_Full_Data_data.csv' datatype='table' name='[__tableau_internal_object_id__].[Financial_Results _1947-Present_Full_Data_data.csv_F290BA210077422F85972146DECB1270]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Traffic_and_Operations _1929-Present_Full_Data_data.csv' datatype='table' name='[__tableau_internal_object_id__].[Traffic_and_Operations _1929-Present_Full_Data_data.csv_48196F4CB0F949B58E688DBD3AC03524]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='fars_df.csv' datatype='table' name='[__tableau_internal_object_id__].[fars_df.csv_275CEB45F4EC49398B59E0E3141EFAA2]' role='measure' type='quantitative' />
+      <column caption='Fatal Accidents  Per Mln Flights' datatype='real' name='[fatal accidents  per mln flights]' role='measure' type='quantitative' />
+      <column caption='Moving 5 Year Average # Of Accidents' datatype='real' name='[moving 5 year average # of accidents]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-hidden-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Year (Financial_Results _1947-Present_Full_Data_data.csv)' />
+        <field-sort-custom-order field='_Item Type (Financial_Results _1947-Present_Full_Data_data.csv)' />
+        <field-sort-custom-order field='_Path (Financial_Results _1947-Present_Full_Data_data.csv)' />
+        <field-sort-custom-order field='Title (Financial_Results _1947-Present_Full_Data_data.csv)' />
+        <field-sort-custom-order field='Aircraft Deps (000) (Financial_Results _1947-Present_Full_Data_data.csv)' />
+        <field-sort-custom-order field='Aircraft KMs (mils) (Financial_Results _1947-Present_Full_Data_data.csv)' />
+        <field-sort-custom-order field='ASKs (mils) (Financial_Results _1947-Present_Full_Data_data.csv)' />
+        <field-sort-custom-order field='Cargo RTKs (mils) (Financial_Results _1947-Present_Full_Data_data.csv)' />
+        <field-sort-custom-order field='Freight RTKs (mils) (Financial_Results _1947-Present_Full_Data_data.csv)' />
+        <field-sort-custom-order field='Freight Tonnes (mils) (Financial_Results _1947-Present_Full_Data_data.csv)' />
+        <field-sort-custom-order field='Mail RTKs (mils) (Financial_Results _1947-Present_Full_Data_data.csv)' />
+        <field-sort-custom-order field='NetMargin (Financial_Results _1947-Present_Full_Data_data.csv)' />
+        <field-sort-custom-order field='NetProfit (mils) (Financial_Results _1947-Present_Full_Data_data.csv)' />
+        <field-sort-custom-order field='Number of Records (Financial_Results _1947-Present_Full_Data_data.csv)' />
+        <field-sort-custom-order field='OpProfit (mils) (Financial_Results _1947-Present_Full_Data_data.csv)' />
+        <field-sort-custom-order field='OpRevenues (mils) (Financial_Results _1947-Present_Full_Data_data.csv)' />
+        <field-sort-custom-order field='Pax (mils) (Financial_Results _1947-Present_Full_Data_data.csv)' />
+        <field-sort-custom-order field='PLF (Financial_Results _1947-Present_Full_Data_data.csv)' />
+        <field-sort-custom-order field='RPKs (mils) (Financial_Results _1947-Present_Full_Data_data.csv)' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Accidents and fatalities per ye' id='Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808'>
+            <properties context=''>
+              <relation connection='google-sheets.08pbo3818n9b0s193brd80lqnj42' name='Accidents and fatalities per ye' table='[&apos;Accidents and fatalities per ye$&apos;]' type='table'>
+                <columns gridOrigin='A1:W79:no:A1:W79:2' lost='0' outcome='1' processed='1272'>
+                  <column datatype='integer' date-parse-format='yyyy' name='Accidents  (excl. suicide, sabotage, hijackings etc.) Year' ordinal='0' />
+                  <column datatype='integer' name='Accidents  (excl. suicide, sabotage, hijackings etc.) Accidents' ordinal='1' />
+                  <column datatype='real' name='Accidents  (excl. suicide, sabotage, hijackings etc.) Fatalities' ordinal='2' />
+                  <column datatype='real' name='F4' ordinal='3' />
+                  <column datatype='integer' name='Accidents  (incl. suicide, sabotage, hijackings etc.) Accidents' ordinal='4' />
+                  <column datatype='integer' name='Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities' ordinal='5' />
+                  <column datatype='real' name='F7' ordinal='6' />
+                  <column datatype='integer' name='Accidents with passenger flights  (incl. suicide, sabotage, hijackings etc.) Accidents' ordinal='7' />
+                  <column datatype='integer' name='Accidents with passenger flights  (incl. suicide, sabotage, hijackings etc.) Fatalities' ordinal='8' />
+                  <column datatype='real' name='F10' ordinal='9' />
+                  <column datatype='integer' name='Accidents with passenger + cargo flights (incl. suicide, sabotage, hijackings etc.) Accidents' ordinal='10' />
+                  <column datatype='integer' name='Accidents with passenger + cargo flights (incl. suicide, sabotage, hijackings etc.) Fatalities' ordinal='11' />
+                  <column datatype='integer' name='F13' ordinal='12' />
+                  <column datatype='real' name='F14' ordinal='13' />
+                  <column datatype='integer' name='World air traffic (departures)' ordinal='14' />
+                  <column datatype='real' name='1 accident  per x flights' ordinal='15' />
+                  <column datatype='real' name='fatal accidents  per mln flights' ordinal='16' />
+                  <column datatype='real' name='5-year  moving avg' ordinal='17' />
+                  <column datatype='real' name='F19' ordinal='18' />
+                  <column datatype='integer' name='F20' ordinal='19' />
+                  <column datatype='integer' name='Corporate jets (civilian) Accidents' ordinal='20' />
+                  <column datatype='integer' name='Corporate jets (civilian) Fatalities' ordinal='21' />
+                  <column datatype='real' name='moving 5 year average # of accidents' ordinal='22' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Airplane_Crashes_and_Fatalities_Since_1908.csv' id='Airplane_Crashes_and_Fatalities_Since_1908.csv_D7F4D929DCAA4F52BAE330F7BECF817E'>
+            <properties context=''>
+              <relation connection='textscan.1taneb016tmodu1c58l4u1kh2stx' name='Airplane_Crashes_and_Fatalities_Since_1908.csv' table='[C:\Users\chana\OneDrive\Desktop\640\Project\hhaveliw-airplane-crashes-1908-2009\hhaveliw-airplane-crashes-1908-2009\Airplane_Crashes_and_Fatalities_Since_1908#csv]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:M5269:no:A1:M5269:1' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='datetime' name='Time' ordinal='1' />
+                  <column datatype='string' name='Location' ordinal='2' />
+                  <column datatype='string' name='Operator' ordinal='3' />
+                  <column datatype='integer' name='Flight #' ordinal='4' />
+                  <column datatype='string' name='Route' ordinal='5' />
+                  <column datatype='string' name='Type' ordinal='6' />
+                  <column datatype='string' name='Registration' ordinal='7' />
+                  <column datatype='string' name='cn/In' ordinal='8' />
+                  <column datatype='integer' name='Aboard' ordinal='9' />
+                  <column datatype='integer' name='Fatalities' ordinal='10' />
+                  <column datatype='integer' name='Ground' ordinal='11' />
+                  <column datatype='string' name='Summary' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Financial_Results _1947-Present_Full_Data_data.csv' id='Financial_Results _1947-Present_Full_Data_data.csv_F290BA210077422F85972146DECB1270'>
+            <properties context=''>
+              <relation connection='textscan.1d7qmxx06hhx0m1gn2nlo1vhgbjo' name='Financial_Results _1947-Present_Full_Data_data.csv' table='[Financial_Results _1947-Present_Full_Data_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' date-parse-format='yyyy' name='Year' ordinal='0' />
+                  <column datatype='string' name='_Item Type' ordinal='1' />
+                  <column datatype='string' name='_Path' ordinal='2' />
+                  <column datatype='integer' name='Title' ordinal='3' />
+                  <column datatype='real' name='Aircraft Deps (000)' ordinal='4' />
+                  <column datatype='real' name='Aircraft KMs (mils)' ordinal='5' />
+                  <column datatype='real' name='ASKs (mils)' ordinal='6' />
+                  <column datatype='real' name='Cargo RTKs (mils)' ordinal='7' />
+                  <column datatype='real' name='Freight RTKs (mils)' ordinal='8' />
+                  <column datatype='real' name='Freight Tonnes (mils)' ordinal='9' />
+                  <column datatype='real' name='Mail RTKs (mils)' ordinal='10' />
+                  <column datatype='real' name='NetMargin' ordinal='11' />
+                  <column datatype='integer' name='NetProfit (mils)' ordinal='12' />
+                  <column datatype='integer' name='Number of Records' ordinal='13' />
+                  <column datatype='integer' name='OpProfit (mils)' ordinal='14' />
+                  <column datatype='integer' name='OpRevenues (mils)' ordinal='15' />
+                  <column datatype='real' name='Pax (mils)' ordinal='16' />
+                  <column datatype='real' name='PLF' ordinal='17' />
+                  <column datatype='real' name='RPKs (mils)' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Traffic_and_Operations _1929-Present_Full_Data_data.csv' id='Traffic_and_Operations _1929-Present_Full_Data_data.csv_48196F4CB0F949B58E688DBD3AC03524'>
+            <properties context=''>
+              <relation connection='textscan.16gqqxf06fnufy13hm3ws003bgau' name='Traffic_and_Operations _1929-Present_Full_Data_data.csv' table='[Traffic_and_Operations _1929-Present_Full_Data_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' date-parse-format='yyyy' name='Year' ordinal='0' />
+                  <column datatype='string' name='_Item Type' ordinal='1' />
+                  <column datatype='string' name='_Path' ordinal='2' />
+                  <column datatype='integer' name='Title' ordinal='3' />
+                  <column datatype='real' name='Aircraft Deps (000)' ordinal='4' />
+                  <column datatype='real' name='Aircraft KMs (mils)' ordinal='5' />
+                  <column datatype='real' name='ASKs (mils)' ordinal='6' />
+                  <column datatype='real' name='Cargo RTKs (mils)' ordinal='7' />
+                  <column datatype='real' name='Freight RTKs (mils)' ordinal='8' />
+                  <column datatype='real' name='Freight Tonnes (mils)' ordinal='9' />
+                  <column datatype='real' name='Mail RTKs (mils)' ordinal='10' />
+                  <column datatype='real' name='NetMargin' ordinal='11' />
+                  <column datatype='integer' name='NetProfit (mils)' ordinal='12' />
+                  <column datatype='integer' name='Number of Records' ordinal='13' />
+                  <column datatype='integer' name='OpProfit (mils)' ordinal='14' />
+                  <column datatype='integer' name='OpRevenues (mils)' ordinal='15' />
+                  <column datatype='real' name='Pax (mils)' ordinal='16' />
+                  <column datatype='real' name='PLF' ordinal='17' />
+                  <column datatype='real' name='RPKs (mils)' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='fars_df.csv' id='fars_df.csv_275CEB45F4EC49398B59E0E3141EFAA2'>
+            <properties context=''>
+              <relation connection='textscan.1gfwmvl0k2v5pe16p2d911jrk786' name='fars_df.csv' table='[fars_df#csv$]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:T27:no:A1:T27:1' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' date-parse-format='yyyy' name='F1' ordinal='0' />
+                  <column datatype='integer' name='Fatal Crashes' ordinal='1' />
+                  <column datatype='integer' name='Drivers' ordinal='2' />
+                  <column datatype='integer' name='Passengers' ordinal='3' />
+                  <column datatype='integer' name='Unknown' ordinal='4' />
+                  <column datatype='integer' name='Sub Total1' ordinal='5' />
+                  <column datatype='integer' name='Motorcyclists' ordinal='6' />
+                  <column datatype='integer' name='Pedestrians' ordinal='7' />
+                  <column datatype='integer' name='Pedalcyclists' ordinal='8' />
+                  <column datatype='integer' name='Other/ Unknown' ordinal='9' />
+                  <column datatype='integer' name='Sub Total2' ordinal='10' />
+                  <column datatype='integer' name='Total**' ordinal='11' />
+                  <column datatype='integer' name='Vehicle Miles Traveled (Billions)' ordinal='12' />
+                  <column datatype='integer' name='Resident Population (Thousands)' ordinal='13' />
+                  <column datatype='integer' name='Registered Vehicles (Thousands)' ordinal='14' />
+                  <column datatype='integer' name='Licensed Drivers (Thousands)' ordinal='15' />
+                  <column datatype='real' name='Fatalities per 100 Million Vehicle Miles Traveled' ordinal='16' />
+                  <column datatype='real' name='Fatalities per 100,000 Population' ordinal='17' />
+                  <column datatype='real' name='Fatalities per 100,000 Registered Vehicles' ordinal='18' />
+                  <column datatype='real' name='Fatalities per 100,000 Licensed Drivers' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression _.fcp.RelationshipCalculations.false...op='[YEAR(Date)]' _.fcp.RelationshipCalculations.true...op='YEAR([Date])' />
+              <expression op='[Accidents  (excl. suicide, sabotage, hijackings etc.) Year]' />
+            </expression>
+            <first-end-point object-id='Airplane_Crashes_and_Fatalities_Since_1908.csv_D7F4D929DCAA4F52BAE330F7BECF817E' />
+            <second-end-point object-id='Accidents and fatalities per ye_13191870E49D472DBDF1B1339FFFD808' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression _.fcp.RelationshipCalculations.false...op='[YEAR(Year)]' _.fcp.RelationshipCalculations.true...op='YEAR([Year])' />
+              <expression op='[Year (Financial_Results _1947-Present_Full_Data_data.csv)]' />
+            </expression>
+            <first-end-point object-id='Traffic_and_Operations _1929-Present_Full_Data_data.csv_48196F4CB0F949B58E688DBD3AC03524' />
+            <second-end-point object-id='Financial_Results _1947-Present_Full_Data_data.csv_F290BA210077422F85972146DECB1270' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression _.fcp.RelationshipCalculations.false...op='[YEAR(Date)]' _.fcp.RelationshipCalculations.true...op='YEAR([Date])' />
+              <expression _.fcp.RelationshipCalculations.false...op='[YEAR(Year)]' _.fcp.RelationshipCalculations.true...op='YEAR([Year])' />
+            </expression>
+            <first-end-point object-id='Airplane_Crashes_and_Fatalities_Since_1908.csv_D7F4D929DCAA4F52BAE330F7BECF817E' />
+            <second-end-point object-id='Traffic_and_Operations _1929-Present_Full_Data_data.csv_48196F4CB0F949B58E688DBD3AC03524' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression _.fcp.RelationshipCalculations.false...op='[YEAR(Date)]' _.fcp.RelationshipCalculations.true...op='YEAR([Date])' />
+              <expression op='[F1]' />
+            </expression>
+            <first-end-point object-id='Airplane_Crashes_and_Fatalities_Since_1908.csv_D7F4D929DCAA4F52BAE330F7BECF817E' />
+            <second-end-point object-id='fars_df.csv_275CEB45F4EC49398B59E0E3141EFAA2' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_2588313D5D284397ACD3A47D87C58DE5]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Sheet 3' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Sheet 3' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Air Traffic Fatalities</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Accidents and fatalities per year' name='federated.1mrgop811p6tqn1au5el40xv97si' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mrgop811p6tqn1au5el40xv97si'>
+            <column datatype='integer' name='[Accidents  (excl. suicide, sabotage, hijackings etc.) Year]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities]' role='measure' type='quantitative' />
+            <column-instance column='[Accidents  (excl. suicide, sabotage, hijackings etc.) Year]' derivation='None' name='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities]' derivation='Sum' name='[sum:Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mrgop811p6tqn1au5el40xv97si].[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='1990' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='1991' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='1992' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='1993' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='1994' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='1995' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='1996' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='1997' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='1998' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='1999' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='2000' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='2001' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='2002' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='2003' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='2004' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='2005' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='2006' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='2007' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='2008' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='2009' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='2010' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='2011' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='2012' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='2013' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='2014' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='2015' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='2016' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='2017' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='2018' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='2019' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='2020' />
+              <groupfilter function='member' level='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' member='2021' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1mrgop811p6tqn1au5el40xv97si].[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1mrgop811p6tqn1au5el40xv97si].[sum:Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities:qk]' scope='cols' value='Fatalities' />
+            <format attr='auto-subtitle' class='0' field='[federated.1mrgop811p6tqn1au5el40xv97si].[sum:Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities:qk]' scope='cols' value='true' />
+            <format attr='subtitle' class='0' field='[federated.1mrgop811p6tqn1au5el40xv97si].[sum:Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities:qk]' scope='cols' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#606b76' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1mrgop811p6tqn1au5el40xv97si].[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]</rows>
+        <cols>[federated.1mrgop811p6tqn1au5el40xv97si].[sum:Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities:qk]</cols>
+      </table>
+      <simple-id uuid='{9699B803-3616-4D7D-9C6F-1F9219B09E2C}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Accidents and fatalities per year' name='federated.1mrgop811p6tqn1au5el40xv97si' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mrgop811p6tqn1au5el40xv97si'>
+            <column datatype='integer' name='[Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[NetProfit (mils)]' role='measure' type='quantitative' />
+            <column datatype='real' default-format='N' name='[RPKs (mils)]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities]' derivation='Sum' name='[sum:Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NetProfit (mils)]' derivation='Sum' name='[sum:NetProfit (mils):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[RPKs (mils)]' derivation='Sum' name='[sum:RPKs (mils):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year-Trunc' name='[tyr:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1mrgop811p6tqn1au5el40xv97si].[sum:NetProfit (mils):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1mrgop811p6tqn1au5el40xv97si].[sum:RPKs (mils):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1mrgop811p6tqn1au5el40xv97si].[sum:Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1mrgop811p6tqn1au5el40xv97si].[sum:NetProfit (mils):qk] + ([federated.1mrgop811p6tqn1au5el40xv97si].[sum:RPKs (mils):qk] + [federated.1mrgop811p6tqn1au5el40xv97si].[sum:Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities:qk]))</rows>
+        <cols>[federated.1mrgop811p6tqn1au5el40xv97si].[tyr:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{D52DA806-0D64-43EC-BD5A-0AD7E7FE2CB2}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Accidents and fatalities per year' name='federated.1mrgop811p6tqn1au5el40xv97si' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mrgop811p6tqn1au5el40xv97si'>
+            <column datatype='integer' name='[Accidents  (excl. suicide, sabotage, hijackings etc.) Year]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[NetProfit (mils)]' role='measure' type='quantitative' />
+            <column-instance column='[Accidents  (excl. suicide, sabotage, hijackings etc.) Year]' derivation='None' name='[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities]' derivation='Sum' name='[sum:Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NetProfit (mils)]' derivation='Sum' name='[sum:NetProfit (mils):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1mrgop811p6tqn1au5el40xv97si].[sum:Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1mrgop811p6tqn1au5el40xv97si].[sum:NetProfit (mils):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1mrgop811p6tqn1au5el40xv97si].[sum:Accidents  (incl. suicide, sabotage, hijackings etc.) Fatalities:qk] + [federated.1mrgop811p6tqn1au5el40xv97si].[sum:NetProfit (mils):qk])</rows>
+        <cols>[federated.1mrgop811p6tqn1au5el40xv97si].[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:qk]</cols>
+      </table>
+      <simple-id uuid='{37648646-DB36-4367-9844-65B05AFA2D27}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1mrgop811p6tqn1au5el40xv97si].[none:Accidents  (excl. suicide, sabotage, hijackings etc.) Year:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+        <floating-toolbar-visibility value='2' />
+      </viewpoint>
+      <simple-id uuid='{9BB8A69F-86BD-4002-8C81-9ABD44D6D001}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2F24FE28-5E39-4988-B82A-91B89082807B}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{923FDFA8-836D-4B04-B9BD-13C591C892BC}' />
+    </window>
+  </windows>
+</workbook>
